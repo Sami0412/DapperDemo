@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSchemaModel FileFormatVersion="1.2" SchemaVersion="2.9" DspName="Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider" CollationLcid="1033" CollationCaseSensitive="False" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+	<Header>
+		<CustomData Category="AnsiNulls">
+			<Metadata Name="AnsiNulls" Value="True" />
+		</CustomData>
+		<CustomData Category="QuotedIdentifier">
+			<Metadata Name="QuotedIdentifier" Value="True" />
+		</CustomData>
+		<CustomData Category="CompatibilityMode">
+			<Metadata Name="CompatibilityMode" Value="130" />
+		</CustomData>
+		<CustomData Category="Reference" Type="Assembly">
+			<Metadata Name="LogicalName" Value="Database.dll" />
+			<Metadata Name="FileName" Value="C:\USERS\SAMANTHA.WILLIAMS\DOWNLOADS\GETTING-STARTED-DAPPER\02\DEMOS\DEMOS\AFTER\DAPPERDEMO\DATABASE\OBJ\DEBUG\DATABASE.DLL" />
+			<Metadata Name="AssemblyName" Value="Database" />
+			<Metadata Name="PermissionSet" Value="SAFE" />
+			<Metadata Name="Owner" Value="" />
+			<Metadata Name="GenerateSqlClrDdl" Value="True" />
+			<Metadata Name="IsVisible" Value="True" />
+			<Metadata Name="IsModelAware" Value="True" />
+			<Metadata Name="SkipCreationIfEmpty" Value="True" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Users\samantha.williams\Downloads\getting-started-dapper\02\demos\demos\after\DapperDemo\Database\obj\Debug\Database.pdb" />
+		</CustomData>
+		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
+	</Header>
+	<Model>
+		<Element Type="SqlDatabaseOptions">
+			<Property Name="Collation" Value="SQL_Latin1_General_CP1_CI_AS" />
+			<Property Name="IsAnsiNullDefaultOn" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="IsAnsiWarningsOn" Value="True" />
+			<Property Name="IsArithAbortOn" Value="True" />
+			<Property Name="IsConcatNullYieldsNullOn" Value="True" />
+			<Property Name="IsTornPageProtectionOn" Value="False" />
+			<Property Name="IsFullTextEnabled" Value="True" />
+			<Property Name="PageVerifyMode" Value="3" />
+			<Property Name="DefaultLanguage" Value="" />
+			<Property Name="DefaultFullTextLanguage" Value="" />
+			<Property Name="QueryStoreStaleQueryThreshold" Value="367" />
+			<Relationship Name="DefaultFilegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Addresses]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Addresses].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Addresses].[ContactId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Addresses].[AddressType]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Addresses].[StreetAddress]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Addresses].[City]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Addresses].[StateId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Addresses].[PostalCode]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="3" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="4" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Contacts]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Contacts].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Contacts].[FirstName]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Contacts].[LastName]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Contacts].[Email]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Contacts].[Company]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Contacts].[Title]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[DeleteAddress]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	DELETE FROM Addresses WHERE Id = @Id;
+END;]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Addresses]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DeleteAddress].[@Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[DeleteAddress].[@Id]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="105" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DeleteAddress]&#xD;&#xA;&#x9;@Id int&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[DeleteContact]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	DELETE FROM Contacts
+	WHERE Id = @Id;
+END;]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Contacts]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Contacts].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DeleteContact].[@Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[DeleteContact].[@Id]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="CreateOffset" Value="2" />
+				<Property Name="Length" Value="108" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="&#xD;&#xA;CREATE PROCEDURE [dbo].[DeleteContact]&#xD;&#xA;&#x9;@Id int&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Addresses_Contacts]">
+			<Property Name="OnDeleteAction" Value="1" />
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Addresses].[ContactId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Addresses]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Contacts].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Contacts]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="4" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Addresses_States]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Addresses].[StateId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Addresses]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[States].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[States]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="5" />
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[GetContact]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	SELECT [Id]
+		  ,[FirstName]
+		  ,[LastName]
+		  ,[Company]
+		  ,[Title]
+		  ,[Email]
+	  FROM [dbo].[Contacts]
+	WHERE Id = @Id;
+
+	SELECT 
+		Id,
+		ContactId,
+		AddressType,
+		StreetAddress,
+		City,
+		StateId,
+		PostalCode
+	FROM [dbo].[Addresses] 
+	WHERE ContactID = @Id;
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Contacts]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Contacts].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Contacts].[FirstName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Contacts].[LastName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Contacts].[Company]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Contacts].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Contacts].[Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[GetContact].[@Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[ContactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[AddressType]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[StreetAddress]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[City]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[StateId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[PostalCode]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[GetContact].[@Id]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="CreateOffset" Value="4" />
+				<Property Name="Length" Value="357" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="&#xD;&#xA;&#xD;&#xA;CREATE procedure [dbo].[GetContact]&#xD;&#xA;&#x9;@Id int&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Addresses]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Addresses].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Addresses]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="3" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Contacts]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Contacts].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Contacts]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="6" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_States]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[States].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[States]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[SaveAddress]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	UPDATE	Addresses
+	SET		ContactId     = @ContactId,
+	        AddressType   = @AddressType,
+	        StreetAddress = @StreetAddress,
+			City          = @City,
+			StateId       = @StateId,
+			PostalCode    = @PostalCode
+	WHERE	Id            = @Id
+
+	IF @@ROWCOUNT = 0
+	BEGIN
+		INSERT INTO Addresses
+		(ContactId, AddressType, StreetAddress, City, StateId, PostalCode)
+		VALUES (@ContactId, @AddressType, @StreetAddress, @City, @StateId, @PostalCode);
+		
+		SET @Id = cast(scope_identity() as int)
+	END;
+END;]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Addresses]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[ContactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SaveAddress].[@ContactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[AddressType]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SaveAddress].[@AddressType]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[StreetAddress]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SaveAddress].[@StreetAddress]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[City]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SaveAddress].[@City]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[StateId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SaveAddress].[@StateId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[PostalCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SaveAddress].[@PostalCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Addresses].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SaveAddress].[@Id]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SaveAddress].[@Id]">
+						<Property Name="IsOutput" Value="True" />
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SaveAddress].[@ContactId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SaveAddress].[@AddressType]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SaveAddress].[@StreetAddress]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SaveAddress].[@City]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SaveAddress].[@StateId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SaveAddress].[@PostalCode]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="CreateOffset" Value="4" />
+				<Property Name="Length" Value="765" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="&#xD;&#xA;&#xD;&#xA;CREATE procedure [dbo].[SaveAddress]&#xD;&#xA;&#x9;@Id            int output,&#xD;&#xA;&#x9;@ContactId     int,&#xD;&#xA;&#x9;@AddressType   varchar(10),&#xD;&#xA;&#x9;@StreetAddress varchar(50),&#xD;&#xA;&#x9;@City          varchar(50),&#xD;&#xA;&#x9;@StateId       int,&#xD;&#xA;&#x9;@PostalCode    varchar(20)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[SaveContact]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	UPDATE	Contacts
+	SET		FirstName = @FirstName,
+			LastName  = @LastName,
+			Company   = @Company,
+			Title     = @Title,
+			Email     = @Email
+	WHERE	Id        = @Id
+
+	IF @@ROWCOUNT = 0
+	BEGIN
+		INSERT INTO [dbo].[Contacts]
+           ([FirstName]
+           ,[LastName]
+           ,[Company]
+           ,[Title]
+           ,[Email])
+		VALUES
+           (@FirstName,
+           @LastName, 
+           @Company,
+           @Title,
+           @Email);
+		SET @Id = cast(scope_identity() as int)
+	END;
+END;]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Contacts]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Contacts].[FirstName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SaveContact].[@FirstName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Contacts].[LastName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SaveContact].[@LastName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Contacts].[Company]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SaveContact].[@Company]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Contacts].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SaveContact].[@Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Contacts].[Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SaveContact].[@Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Contacts].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SaveContact].[@Id]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SaveContact].[@Id]">
+						<Property Name="IsOutput" Value="True" />
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SaveContact].[@FirstName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SaveContact].[@LastName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SaveContact].[@Company]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SaveContact].[@Title]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SaveContact].[@Email]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="CreateOffset" Value="6" />
+				<Property Name="Length" Value="725" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;create procedure [dbo].[SaveContact]&#xD;&#xA;&#x9;@Id     &#x9;int output,&#xD;&#xA;&#x9;@FirstName&#x9;varchar(50),&#xD;&#xA;&#x9;@LastName&#x9;varchar(50),&#x9;&#xD;&#xA;&#x9;@Company&#x9;varchar(50),&#xD;&#xA;&#x9;@Title&#x9;&#x9;varchar(50),&#xD;&#xA;&#x9;@Email&#x9;&#x9;varchar(50)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[States]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[States].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[States].[StateName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="7" />
+		</Element>
+	</Model>
+</DataSchemaModel>

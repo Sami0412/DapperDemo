@@ -1,0 +1,166 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\samantha.williams\\Downloads\\getting-started-dapper\\02\\demos\\demos\\after\\DapperDemo\\Runner\\Runner.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\samantha.williams\\Downloads\\getting-started-dapper\\02\\demos\\demos\\after\\DapperDemo\\DataLayer\\DataLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\samantha.williams\\Downloads\\getting-started-dapper\\02\\demos\\demos\\after\\DapperDemo\\DataLayer\\DataLayer.csproj",
+        "projectName": "DataLayer",
+        "projectPath": "C:\\Users\\samantha.williams\\Downloads\\getting-started-dapper\\02\\demos\\demos\\after\\DapperDemo\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\samantha.williams\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samantha.williams\\Downloads\\getting-started-dapper\\02\\demos\\demos\\after\\DapperDemo\\DataLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\samantha.williams\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nexus.build.zuto.cloud:8081/nexus/service/local/nuget/cl4u/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/applicationinsights-sdk-labs/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\samantha.williams\\Downloads\\getting-started-dapper\\02\\demos\\demos\\after\\DapperDemo\\Runner\\Runner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\samantha.williams\\Downloads\\getting-started-dapper\\02\\demos\\demos\\after\\DapperDemo\\Runner\\Runner.csproj",
+        "projectName": "Runner",
+        "projectPath": "C:\\Users\\samantha.williams\\Downloads\\getting-started-dapper\\02\\demos\\demos\\after\\DapperDemo\\Runner\\Runner.csproj",
+        "packagesPath": "C:\\Users\\samantha.williams\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samantha.williams\\Downloads\\getting-started-dapper\\02\\demos\\demos\\after\\DapperDemo\\Runner\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\samantha.williams\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nexus.build.zuto.cloud:8081/nexus/service/local/nuget/cl4u/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/applicationinsights-sdk-labs/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\samantha.williams\\Downloads\\getting-started-dapper\\02\\demos\\demos\\after\\DapperDemo\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\samantha.williams\\Downloads\\getting-started-dapper\\02\\demos\\demos\\after\\DapperDemo\\DataLayer\\DataLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "YamlDotNet": {
+              "target": "Package",
+              "version": "[11.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+C:\Users\samantha.williams\Downloads\getting-started-dapper\02\demos\demos\after\DapperDemo\Database\bin\Debug\Database.dacpac
+C:\Users\samantha.williams\Downloads\getting-started-dapper\02\demos\demos\after\DapperDemo\Database\bin\Debug\Database.dll
+C:\Users\samantha.williams\Downloads\getting-started-dapper\02\demos\demos\after\DapperDemo\Database\bin\Debug\Database.pdb
+C:\Users\samantha.williams\Downloads\getting-started-dapper\02\demos\demos\after\DapperDemo\Database\obj\Debug\Database.sqlproj.AssemblyReference.cache
+C:\Users\samantha.williams\Downloads\getting-started-dapper\02\demos\demos\after\DapperDemo\Database\obj\Debug\Database.dll
+C:\Users\samantha.williams\Downloads\getting-started-dapper\02\demos\demos\after\DapperDemo\Database\obj\Debug\Database.pdb

@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "D/P/i42eetbR0Sf/urFM5WM0U2NgGlLKyfdZOz4iOvcZU3xrC2I38XOQ0bxEHdpwX2+QB7PPwGuzaIRr4q+hBg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\samantha.williams\\Downloads\\getting-started-dapper\\02\\demos\\demos\\after\\DapperDemo\\Runner\\Runner.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\6.0.0\\microsoft.extensions.configuration.fileextensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\microsoft.extensions.configuration.json\\6.0.0\\microsoft.extensions.configuration.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0\\microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\samantha.williams\\.nuget\\packages\\yamldotnet\\11.2.1\\yamldotnet.11.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}
