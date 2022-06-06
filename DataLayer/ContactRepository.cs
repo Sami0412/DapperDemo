@@ -38,6 +38,31 @@ namespace DataLayer
             db.Execute("DELETE FROM Contacts WHERE Id = @Id", new {id});
         }
 
+        public Contact GetFullContact(int id)
+        {
+            var sql =
+                "SELECT * FROM Contacts WHERE Id = @Id; " +
+                "SELECT * FROM Addresses WHERE ContactId = @Id";
+            
+            using (var multipleResults = db.QueryMultiple(sql, new { Id = id }))
+            {
+                //QueryMultiple Dapper method - expects multiple result sets from the query
+                //returns a GridReader object that we have named multipleResults
+                //Call Read method on this object multiple times - once to get the contact object, and again to get any associated addresses
+                var contact = multipleResults.Read<Contact>().SingleOrDefault();
+
+                var addresses = multipleResults.Read<Address>().ToList();
+
+                //if neither are null, add all the addresses to the Contact object's Addresses property
+                if (contact != null && addresses != null)
+                {
+                    contact.Addresses.AddRange(addresses);
+                }
+
+                return contact;
+            }
+        }
+
         public Contact Update(Contact contact)
         {
             var sql =

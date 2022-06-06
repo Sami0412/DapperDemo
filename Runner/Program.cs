@@ -19,6 +19,10 @@ namespace Runner
             Find_should_retrieve_existing_entity(id);
             Modify_should_update_existing_entity(id);
             Delete_should_remove_entity(id);
+
+            // var repository = CreateRepository();
+            // var mj = repository.GetFullContact(1);
+            // mj.Output();
         }
 
         static void Delete_should_remove_entity(int id)
@@ -64,13 +68,16 @@ namespace Runner
             IContactRepository repository = CreateRepository();
             
             //act
-            var contact = repository.Find(id);
+            //var contact = repository.Find(id);
+            var contact = repository.GetFullContact(id);
             
             //assert
             Console.WriteLine("*** Get Contact ***)");
             contact.Output();
             Debug.Assert(contact.FirstName == "Greg");
             Debug.Assert(contact.LastName == "Bingham");
+            Debug.Assert(contact.Addresses.Count == 1);
+            Debug.Assert(contact.Addresses.First().StreetAddress == "123 Main Street");
         }
         static int Insert_should_assign_identity_to_new_entity()
         {
@@ -117,8 +124,8 @@ namespace Runner
 
         private static IContactRepository CreateRepository()
         {
-            // return new ContactRepository(config.GetConnectionString("DefaultConnection"));
-            return new ContactRepositoryContrib(config.GetConnectionString("DefaultConnection"));
+            return new ContactRepository(config.GetConnectionString("DefaultConnection"));
+            //return new ContactRepositoryContrib(config.GetConnectionString("DefaultConnection"));
         }
     }
 }

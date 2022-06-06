@@ -49,4 +49,9 @@ public class ContactRepositoryContrib : IContactRepository
         //Create temporary Contact object as an intermediary
         db.Delete(new Contact {Id = id});
     }
+
+    public Contact GetFullContact(int id)
+    {
+        throw new System.NotImplementedException();
+    }
 }
